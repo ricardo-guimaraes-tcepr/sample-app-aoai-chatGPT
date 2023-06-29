@@ -163,7 +163,7 @@ const Chat = () => {
                                     className={styles.chatIcon}
                                     aria-hidden="true"
                                 />
-                                <h1 className={styles.chatEmptyStateTitle}>Start chatting</h1>
+                                <h1 className={styles.chatEmptyStateTitle}>Nova Conversa</h1>
                                 <h2 className={styles.chatEmptyStateSubtitle}>This chatbot is configured to answer your questions</h2>
                             </Stack>
                         ) : (
@@ -195,7 +195,7 @@ const Chat = () => {
                                         <div className={styles.chatMessageGpt}>
                                             <Answer
                                                 answer={{
-                                                    answer: "Generating answer...",
+                                                    answer: "Gerando resposta...",
                                                     citations: []
                                                 }}
                                                 onCitationClicked={() => null}
@@ -238,7 +238,7 @@ const Chat = () => {
                             </div>
                             <QuestionInput
                                 clearOnSend
-                                placeholder="Type a new question..."
+                                placeholder="Nova pergunta..."
                                 disabled={isLoading}
                                 onSend={question => makeApiRequest(question)}
                             />
