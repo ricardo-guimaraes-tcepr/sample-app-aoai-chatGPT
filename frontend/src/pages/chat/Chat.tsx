@@ -163,7 +163,7 @@ const Chat = () => {
                                     className={styles.chatIcon}
                                     aria-hidden="true"
                                 />
-                                <h1 className={styles.chatEmptyStateTitle}>Nova Conversa</h1>
+                                <h1 className={styles.chatEmptyStateTitle}>Nova Conversa - Teste de publicação</h1>
                                 <h2 className={styles.chatEmptyStateSubtitle}>Este chat está configurado para responder suas perguntas com privacidade.</h2>
                             </Stack>
                         ) : (
