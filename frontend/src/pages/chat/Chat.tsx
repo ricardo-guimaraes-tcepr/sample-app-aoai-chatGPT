@@ -164,7 +164,7 @@ const Chat = () => {
                                     aria-hidden="true"
                                 />
                                 <h1 className={styles.chatEmptyStateTitle}>Nova Conversa</h1>
-                                <h2 className={styles.chatEmptyStateSubtitle}>Este chat está configurado para responder suas perguntas com segurança</h2>
+                                <h2 className={styles.chatEmptyStateSubtitle}>Este chat está configurado para responder suas perguntas com privacidade.</h2>
                             </Stack>
                         ) : (
                             <div className={styles.chatMessageStream} style={{ marginBottom: isLoading ? "40px" : "0px"}} role="log">
