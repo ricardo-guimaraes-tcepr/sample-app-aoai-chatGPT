@@ -154,7 +154,11 @@ const Chat = () => {
                     <h2 className={styles.chatEmptyStateSubtitle} style={{fontSize: "20px"}}><strong>If you deployed in the last 10 minutes, please wait and reload the page after 10 minutes.</strong></h2>
                 </Stack>
             ) : (
+
                 <Stack horizontal className={styles.chatRoot}>
+                    <div className={styles.floatChild}>
+                        <div>Float Column 1</div>
+                    </div>
                     <div className={styles.chatContainer}>
                         {!lastQuestionRef.current ? (
                             <Stack className={styles.chatEmptyState}>
