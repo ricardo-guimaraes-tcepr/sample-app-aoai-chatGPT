@@ -171,14 +171,13 @@ const Chat = () => {
                                 tabIndex={0}
                                 onClick={clearChat}
                                 onKeyDown={e => e.key === "Enter" || e.key === " " ? clearChat() : null}
+                                className={styles.buttonMenu}
+                                style={{ background: isLoading || answers.length === 0 ? "#BDBDBD" : "radial-gradient(109.81% 107.82% at 100.1% 90.19%, #0F6CBD 33.63%, #2D87C3 70.31%, #8DDDD8 100%)", 
+                                        cursor: isLoading || answers.length === 0 ? "" : "pointer"}}
                                 aria-label="Nova Conversa"
                                 >
-                                <FormNewRegular
-                                    className={styles.buttonMenu}
-                                    style={{ background: isLoading || answers.length === 0 ? "#BDBDBD" : "radial-gradient(109.81% 107.82% at 100.1% 90.19%, #0F6CBD 33.63%, #2D87C3 70.31%, #8DDDD8 100%)", 
-                                            cursor: isLoading || answers.length === 0 ? "" : "pointer"}}
-                                    aria-hidden="true"
-                                />
+                                <FormNewRegular aria-hidden="true"/>
+                                <span>Teste</span>
                             </div>
 
 
