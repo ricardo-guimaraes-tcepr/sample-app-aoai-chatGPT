@@ -158,8 +158,30 @@ const Chat = () => {
                 <Stack horizontal className={styles.chatRoot}>
                     <div className={styles.chatMenu}>
                         <div>
-                            <span>Menu</span>
-                            <button>Nova Conversa</button>
+                            <div>
+                                <span>Menu</span>
+                            </div>
+                            <div>
+                                <button>Nova Conversa</button>
+                            </div>
+
+
+                            <div
+                                role="button"
+                                tabIndex={0}
+                                onClick={clearChat}
+                                onKeyDown={e => e.key === "Enter" || e.key === " " ? clearChat() : null}
+                                aria-label="Clear session"
+                                >
+                                <BroomRegular
+                                    className={styles.clearChatBroom}
+                                    style={{ background: isLoading || answers.length === 0 ? "#BDBDBD" : "radial-gradient(109.81% 107.82% at 100.1% 90.19%, #0F6CBD 33.63%, #2D87C3 70.31%, #8DDDD8 100%)", 
+                                            cursor: isLoading || answers.length === 0 ? "" : "pointer"}}
+                                    aria-hidden="true"
+                                />
+                            </div>
+
+
                         </div>
                     </div>
                     <div className={styles.chatContainer}>
@@ -226,7 +248,7 @@ const Chat = () => {
                                     onKeyDown={e => e.key === "Enter" || e.key === " " ? stopGenerating() : null}
                                     >
                                         <SquareRegular className={styles.stopGeneratingIcon} aria-hidden="true"/>
-                                        <span className={styles.stopGeneratingText} aria-hidden="true">Stop generating</span>
+                                        <span className={styles.stopGeneratingText} aria-hidden="true">Parar geração</span>
                                 </Stack>
                             )}
                             <div
