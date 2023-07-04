@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from "react";
 import { Stack } from "@fluentui/react";
-import { BroomRegular, DismissRegular, SquareRegular, ShieldLockRegular, FormNewRegular } from "@fluentui/react-icons";
+import { BroomRegular, DismissRegular, SquareRegular, ShieldLockRegular, FormNewRegular, DocumentArrowUpRegular } from "@fluentui/react-icons";
 
 import ReactMarkdown from "react-markdown";
 import remarkGfm from 'remark-gfm'
@@ -170,7 +170,7 @@ const Chat = () => {
                                 aria-label="Nova Conversa"
                                 >
                                 <FormNewRegular aria-hidden="true"/>
-                                <span>Teste</span>
+                                <span>Nova Conversa</span>
                             </div>
 
                             <div
@@ -183,8 +183,8 @@ const Chat = () => {
                                         cursor: "pointer"}}
                                 aria-label="Carregar Documento"
                                 >
-                                <FormNewRegular aria-hidden="true"/>
-                                <span>Teste</span>
+                                <DocumentArrowUpRegular aria-hidden="true"/>
+                                <span>Carregar Documento</span>
                             </div>
 
                         </div>

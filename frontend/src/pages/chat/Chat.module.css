@@ -255,7 +255,7 @@ a {
 }
 
 .chatMenu {
-    flex: 1;
+    flex: 0;
     display: flex;
 } 
 
@@ -266,7 +266,7 @@ a {
     justify-content: center;
     align-items: center;
     padding: 8px;
-    position: absolute;
+    position: relative;
     width: 200px;
     height: 40px;
     left: 12px;
