@@ -16,7 +16,7 @@
 }
 
 .chatContainer {
-    flex: 1;
+    flex: 3;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -254,13 +254,7 @@ a {
     padding-right: 5px;
 }
 
-.floatContainer {
-    border: 3px solid #fff;
-    padding: 20px;
-}
-
-.floatChild {
+.chatMenu {
     flex: 1;
     display: flex;
-    width: 50%;
 }  

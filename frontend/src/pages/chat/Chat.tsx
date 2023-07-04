@@ -156,8 +156,11 @@ const Chat = () => {
             ) : (
 
                 <Stack horizontal className={styles.chatRoot}>
-                    <div className={styles.floatChild}>
-                        <div>Float Column 1</div>
+                    <div className={styles.chatMenu}>
+                        <div>
+                            <span>Menu</span>
+                            <button>Nova Conversa</button>
+                        </div>
                     </div>
                     <div className={styles.chatContainer}>
                         {!lastQuestionRef.current ? (
@@ -167,7 +170,7 @@ const Chat = () => {
                                     className={styles.chatIcon}
                                     aria-hidden="true"
                                 />
-                                <h1 className={styles.chatEmptyStateTitle}>Nova Conversa - Teste 03/07/2023</h1>
+                                <h1 className={styles.chatEmptyStateTitle}>Nova Conversa</h1>
                                 <h2 className={styles.chatEmptyStateSubtitle}>Este chat está configurado para responder suas perguntas com privacidade.</h2>
                             </Stack>
                         ) : (
