@@ -269,7 +269,8 @@ a {
     position: relative;
     width: 200px;
     height: 40px;
-    left: 12px;
+    left: 0px;
+    top: 0px
     color: #FFFFFF;
     border: 1px solid #D1D1D1;
     border-radius: 20px;
